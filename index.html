@@ -6,6 +6,11 @@
     <title>My Creation</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -22,20 +27,64 @@
     </header>
 
     <main>
-        <section class="items">
-            
-            <div class="content">
-                <h3>First</h3>
-                <h1>Welcome to My Website!</h1>
-                <p>This is some content above the footer.</p>
+
+        <section class="information">
+            <div class="info-container">
+                <div class="content">
+                    <h1>Welcome to My Website!</h1>
+                    <p>This is some content</p>
+                </div>
             </div>
         </section>
-        <section class="items">
-            <h3>Second</h3>
+
+
+        <section class="featured-articles">
+            <h1 class="section-title">Featured Articles</h1>
+            <div class="articles-container">
+                <!-- Article 1 -->
+                <div class="article-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">The Future of Web Development</h2>
+                        <p class="article-excerpt">Explore the latest trends in web development, from JavaScript frameworks to the rise of no-code platforms...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- Article 2 -->
+                <div class="article-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">How AI is Shaping the Future</h2>
+                        <p class="article-excerpt">Artificial Intelligence is revolutionizing industries, from healthcare to finance. Learn how AI is impacting the world...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- Article 3 -->
+                <div class="article-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">10 Tips for Productive Remote Work</h2>
+                        <p class="article-excerpt">Remote work is here to stay. Here are 10 tips to help you stay focused and productive while working from home...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="items">
-            <h3>Third</h3>
+
+
+        <section class="Services Project">
+            <h1 class="section-title">Services Project</h1>
+            <div id="services" class="service-container">
+                <div class="service-card services-1">Card-One</div>
+                <div class="service-card services-2">Card-Two</div>
+                <div class="service-card services-3">Card-Three</div>
+                <div class="service-card services-4">Card-Four</div>
+                <div class="service-card services-5">Card-Five</div>
+            </div>
         </section>
+
     </main>
 
     <footer class="footer">
@@ -45,7 +94,11 @@
             <li><a href="#">Terms of Service</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+
         <p>&copy; 2025 My Website | All Rights Reserved</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
