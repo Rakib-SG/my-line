@@ -82,147 +82,59 @@ nav ul li a:hover{
 
 
 
-main{
-    width: min(69ch, 100% - 4rem);
-    margin-inline: auto;
+
+/* ---- Services Styling ---- */
+
+#services{
+    margin: 1rem 0;
 }
-
-
-/* .container h2{
-    text-decoration: 2px solid underline;
-    color: #f06767;
-    font-size: 2rem;
-} */
-
-
-section{
-    margin: 2rem 0;
-}
-
-/* Information styles  */
-/* .information{
-    height: 50vh;
-    background: url("https://images.unsplash.com/photo-1634118931958-f1cf1f9c6156?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat fixed;
-    display: flex;
-    
-} */
-
-.banner{
-    
-    background: url("https://images.unsplash.com/photo-1634118931958-f1cf1f9c6156?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.banner-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 1rem;
-}
-.banner-container .content-title{
-    color: yellow;
-    margin: 2rem 0;
-    text-decoration: underline;
-}
-.banner-container .content{
-    display: flex;
-    color: white;
-    text-align: center;
-}
-.banner-container .content p{
-    margin: 10px;
-}
-
-.banner-container figure{
-    border: 1px solid white;
-}
-
-
-
-
-/* Blogs Styles */
 
 .section-title{
     text-align: center;
-    color: rgb(39, 101, 129);
-    margin: 1rem 0;
-    text-decoration: underline;
-}
-
-.articles-container{
-    background: url("https://images.unsplash.com/photo-1634118931958-f1cf1f9c6156?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat fixed;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 1rem 0;
-}
-
-.article-content{
-    margin-left: 1rem;
-}
-
-.article-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.article-content .article-title{
-    color: brown;
-}
-.article-content .article-excerpt{
-    color: #f06767;
-}
-.article-content .read-more{
-    color: rgb(39, 101, 129);
-}
-.article-card figure{
-    border: 1px solid white;
-    max-width: 300px;
-    
-}
-figure img{
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-/* Service styles */
-
-.services-project{
-    margin: 1rem 0;
 }
 
 .service-container{
-    margin-block: 2rem;
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
-    
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.2rem;
+    padding: 2rem;
 }
-.service-container .service-card {
-    /* background: wheat; */
-    color: white;
-    box-shadow: 0 0 3px black;
-    border: 1px solid white;
-    padding: 1rem;
-    border-radius: 5px;
+.service-container .card{
+
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
+    height: 200px;
+    border: 1px solid rgb(39, 101, 129);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
     transition: all 0.3s;
 }
+.service-container .card:hover{
+    transform: translateY(-6px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-content i{
+    font-size: 35px;
 
-
-.service-container .service-card:hover{
-
-    border: 1px solid yellow;
-    box-shadow: 0 0 7px black;
+}
+.card-content .title{
+    color: rgb(39, 101, 129);
+    margin-bottom: .5rem;
+}
+.card-content ul li{
+    
+    font-size: 14px;
+    font-family: var(--font-family1);
 }
 
-
+/* 
 .services-1{
     background: url("https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat ;
 }
@@ -238,7 +150,7 @@ figure img{
 }
 .services-5{
     background: url("https://images.unsplash.com/photo-1621815394525-98f11c00dc38?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
-}
+} */
 
 
 
