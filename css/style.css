@@ -12,7 +12,14 @@
     --font-family1: 'Abhaya Libre', serif;
     --font-family2: 'Josefin Sans', sans-serif;
 
-    --header-h: 3.5rem;
+    --primary-bg: #3498db;     /* Blue */
+    --secondary-bg: #2ecc71;   /* Green */
+    --tertiary-bg: #e74c3c;    /* Red */
+
+    --primary-t-clr: #333333;  /* Dark Gray for primary text */
+    --secondary-t-clr: rgb(39, 101, 129); /* Medium Gray for secondary text */
+    --highlight-t-clr: ; /* highlighted or important text */
+
 }
 html{
     color-scheme: light dark;
@@ -32,6 +39,7 @@ svg {
 a{
     text-decoration: none;
 }
+
 /* main{
     width: min(69ch, 100% - 4rem);
     margin-inline: auto;
@@ -39,7 +47,7 @@ a{
 
 
 header{
-    background:  rgb(86, 143, 170);
+    
 }
 header > p{
     text-align: center;
@@ -49,7 +57,7 @@ header > p{
 }
 
 header nav{
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -62,7 +70,7 @@ nav ul li{
     margin-right: 1rem;
 }
 nav ul li a{
-    color: rgb(39, 101, 129);
+    color: var(--secondary-t-clr);
     transition: all 0.3s;
 }
 nav ul li a:hover{
@@ -83,6 +91,36 @@ nav ul li a:hover{
 
 
 
+/* Hero section styling */
+
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+figure{
+    display: inline-block; /* Makes figure behave like an inline element, but still allow block-level behavior */
+    max-width: 500px; /* Ensures figure doesn't overflow its container */
+    margin: 20px auto; /* Adds spacing around figure */
+    position: relative; /* Allows positioning of child elements like caption or overlay */
+    overflow: hidden;
+}
+figure img{
+    display: block; /* Removes bottom space (gap) caused by inline display of images */
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Preserves the aspect ratio */
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    object-fit: cover; /* Ensures the image covers the container (useful for non-squarish images) */
+}
+
+
+
+
+
 /* ---- Services Styling ---- */
 
 #services{
@@ -94,6 +132,7 @@ nav ul li a:hover{
     font-family: var(--font-family1);
 }
 #services .second-title{
+    font-size: 2rem;
     text-align: center;
     color: rgb(39, 101, 129);
 }
