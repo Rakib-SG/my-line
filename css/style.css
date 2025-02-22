@@ -46,9 +46,7 @@ a{
 } */
 
 
-header{
-    
-}
+
 header > p{
     text-align: center;
     text-transform: capitalize;
@@ -152,14 +150,14 @@ span{
     align-items: center;
     justify-content: center;
     height: 200px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     transition: all 0.3s;
 }
 .service-container .card:hover{
     transform: translateY(-6px); 
-    border: 1px solid rgb(39, 101, 129);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background: rgb(155, 197, 216);
 }
 .card-content {
     display: flex;
